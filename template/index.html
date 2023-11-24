@@ -42,6 +42,17 @@
         background-color: black;
         z-index: -1;
     }
+
+    .work-img {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .work-img img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 </style>
 
 <body>
@@ -49,7 +60,7 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <h1 class="logo"><a href="index.html">Dev_Vineet</a></h1>
+            <h1 class="logo"><a href="/">Dev_Vineet</a></h1>
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -115,6 +126,11 @@
                                             <div class="progress-bar" role="progressbar" style="width: 80%;"
                                                 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
+                                        <span>Redux</span> <span class="pull-right">85%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%;"
+                                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
                                         <span>HTML5</span> <span class="pull-right">100%</span>
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" style="width: 100%;"
@@ -153,6 +169,16 @@
                                         <span>Django</span> <span class="pull-right">72%</span>
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" style="width: 72%"
+                                                aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>Docker</span> <span class="pull-right">62%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 62%"
+                                                aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>MongoDb</span> <span class="pull-right">95%</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%"
                                                 aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
 
@@ -330,11 +356,12 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-5">
+                    <div class="col-md-6 col-lg-4">
                         <div class="work-box">
                             <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
-                                    <img src="{% static './image/music_website.png' %}" alt="" class="img-fluid">
+                                    <img src="{% static './image/music_website.png' %}" alt="PLay Music 24X7"
+                                        class="img-fluid">
                                 </div>
                             </a>
                             <div class="work-content">
@@ -355,19 +382,82 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="work-box">
                             <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
                                 <div class="work-img">
-                                    <img src="{% static 'image/developers_point.jpg' %}" alt="" class="img-fluid">
+                                    <img src="{% static './image/hr.jpg' %}" alt="" class="img-fluid">
                                 </div>
                             </a>
                             <div class="work-content">
                                 <div class="row">
                                     <div class="col-sm-8">
-                                        <h2 class="w-title">Developer's Point</h2>
+                                        <h2 class="w-title">Hr Management Web App</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">React JS With Material UI , Node JS </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <!-- <div class="w-like">
+                                            <a href="portfolio-details.html"> <span
+                                                    class="bi bi-plus-circle"></span></a>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="{% static 'image/e-c.jpg' %}" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">E-Commerce</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">React JS, Redux , Node JS, Rest Api</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="{% static 'image/pro.jpg' %}" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Portfolio of Tech Company</h2>
                                         <div class="w-more">
                                             <span class="w-ctegory">Development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="#" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                <div class="work-img">
+                                    <img src="{% static 'image/sales-purchase-software.jpg' %}" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Sales-Purchase-software</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">React js , Node js </span>
                                         </div>
                                     </div>
                                 </div>
@@ -441,9 +531,16 @@
                                         <h6 class="category">Working on Project</h6>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="/">The Ever-Evolving World of Web Development: Unleashing the Power of the Digital Frontier</a></h3>
+                                <h3 class="card-title"><a href="/">The Ever-Evolving World of Web Development:
+                                        Unleashing the Power of the Digital Frontier</a></h3>
                                 <p class="card-description">
-                                    In today's digital age, web development has emerged as a dynamic and crucial field, shaping the way we interact, communicate, and conduct business online. From the creation of user-friendly interfaces to the seamless integration of complex databases, web developers play a pivotal role in bringing websites and web applications to life. In this blog, we will explore the fascinating world of web development, its key aspects, and the skills required to thrive in this rapidly evolving industry.
+                                    In today's digital age, web development has emerged as a dynamic and crucial field,
+                                    shaping the way we interact, communicate, and conduct business online. From the
+                                    creation of user-friendly interfaces to the seamless integration of complex
+                                    databases, web developers play a pivotal role in bringing websites and web
+                                    applications to life. In this blog, we will explore the fascinating world of web
+                                    development, its key aspects, and the skills required to thrive in this rapidly
+                                    evolving industry.
                                 </p>
                             </div>
                         </div>
@@ -461,10 +558,17 @@
                                         <h6 class="category">A Journey into Web Development</h6>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="/">A Journey into Web Development: Unleashing Creativity and Problem-Solving Skills</a>
+                                <h3 class="card-title"><a href="/">A Journey into Web Development: Unleashing Creativity
+                                        and Problem-Solving Skills</a>
                                 </h3>
                                 <p class="card-description">
-                                    Web development is a blend of creativity and technical expertise. As a web developer, you have the power to transform ideas into visually appealing and functional websites. We delve into the fundamentals of web development languages like HTML, CSS, and JavaScript and how they work together to bring life to a website. From structuring content with HTML to styling elements with CSS and adding interactivity with JavaScript, each language contributes to the overall web development process.
+                                    Web development is a blend of creativity and technical expertise. As a web
+                                    developer, you have the power to transform ideas into visually appealing and
+                                    functional websites. We delve into the fundamentals of web development languages
+                                    like HTML, CSS, and JavaScript and how they work together to bring life to a
+                                    website. From structuring content with HTML to styling elements with CSS and adding
+                                    interactivity with JavaScript, each language contributes to the overall web
+                                    development process.
                                 </p>
                             </div>
                         </div>
@@ -482,10 +586,17 @@
                                         <h6 class="category">Life Project</h6>
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="/">Unleashing the Power of a Web Developer: Building the Digital Frontier</a>
+                                <h3 class="card-title"><a href="/">Unleashing the Power of a Web Developer: Building the
+                                        Digital Frontier</a>
                                 </h3>
                                 <p class="card-description">
-                                   The role of a web developer has become more critical than ever before. They are the architects and builders of the digital frontier, shaping our online experiences and enabling businesses to thrive in the digital age. In this blog, we will delve into the fascinating world of web development, exploring the skills, tools, and impact of this dynamic profession At its core, a web developer is a skilled professional who specializes in creating and maintaining websites and web applications.They possess a unique blend of technical expertise, creative flair.
+                                    The role of a web developer has become more critical than ever before. They are the
+                                    architects and builders of the digital frontier, shaping our online experiences and
+                                    enabling businesses to thrive in the digital age. In this blog, we will delve into
+                                    the fascinating world of web development, exploring the skills, tools, and impact of
+                                    this dynamic profession At its core, a web developer is a skilled professional who
+                                    specializes in creating and maintaining websites and web applications.They possess a
+                                    unique blend of technical expertise, creative flair.
                                 </p>
                             </div>
                         </div>
@@ -577,9 +688,11 @@
                                         </div>
                                         <div class="socials">
                                             <ul>
-                                                <li><a href="https://vineetbhroiya@gmail.com"><span class="ico-circle" style="box-shadow: none">
+                                                <li><a href="https://vineetbhroiya@gmail.com"><span class="ico-circle"
+                                                            style="box-shadow: none">
                                                             <i class="bi bi-envelope-at-fill"></i></span></a></li>
-                                                <li><a href="https://www.instagram.com/vineet_bhoriya/"><span class="ico-circle" style="box-shadow: none">
+                                                <li><a href="https://www.instagram.com/vineet_bhoriya/"><span
+                                                            class="ico-circle" style="box-shadow: none">
                                                             <i class="bi bi-instagram"></i></span></a></li>
                                                 <li><a href="https://www.linkedin.com/in/vineet-bhoriya-729949201"
                                                         target="_blank"><span class="ico-circle"
